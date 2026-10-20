@@ -1,0 +1,65 @@
+{
+  "arch": "densenet121",
+  "task": "cardiomegaly vs no cardiomegaly, frontal chest x-ray",
+  "img_size": 256,
+  "crop_size": 224,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "threshold": 0.45,
+  "target_recall": 0.9,
+  "test_metrics": {
+    "roc_auc": 0.8800718827409763,
+    "accuracy": 0.7707430856381207,
+    "recall": 0.8250701590271281,
+    "precision": 0.6377440347071583,
+    "f1": 0.7194127243066885
+  },
+  "n_train": 7310,
+  "n_test": 3001,
+  "cpu_latency_ms_mean": 126.59681210000902,
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "test_metrics_ci95": {
+    "roc_auc": [
+      0.858,
+      0.898
+    ],
+    "recall": [
+      0.779,
+      0.862
+    ],
+    "false positive rate": [
+      0.235,
+      0.284
+    ]
+  },
+  "test_metrics_by_view": {
+    "PA": {
+      "images": 1254.0,
+      "positives": 427.0,
+      "roc_auc": 0.925,
+      "recall": 0.904,
+      "false positive rate": 0.244
+    },
+    "AP": {
+      "images": 1747.0,
+      "positives": 642.0,
+      "roc_auc": 0.846,
+      "recall": 0.773,
+      "false positive rate": 0.271
+    }
+  },
+  "val_threshold_by_view": {
+    "PA": 0.7,
+    "AP": 0.3
+  },
+  "tta_test_auc": 0.8836464101238171
+}

@@ -1,0 +1,79 @@
+{
+  "model_name": "XGBoost (tuned) (calibrated)",
+  "keep_ca_thal": false,
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope"
+  ],
+  "num_cols": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak"
+  ],
+  "cat_cols": [
+    "cp",
+    "restecg",
+    "slope"
+  ],
+  "bin_cols": [
+    "sex",
+    "fbs",
+    "exang"
+  ],
+  "ranges": {
+    "age": [
+      28.0,
+      77.0,
+      54.0
+    ],
+    "trestbps": [
+      80.0,
+      200.0,
+      130.0
+    ],
+    "chol": [
+      85.0,
+      603.0,
+      242.5
+    ],
+    "thalach": [
+      60.0,
+      202.0,
+      140.0
+    ],
+    "oldpeak": [
+      -2.0,
+      6.2,
+      0.5
+    ]
+  },
+  "threshold": 0.35,
+  "target_recall": 0.9,
+  "test_metrics": {
+    "accuracy": 0.8097826086956522,
+    "recall": 0.9313725490196079,
+    "precision": 0.7723577235772358,
+    "f1": 0.8444444444444444,
+    "roc_auc": 0.8799617407938785,
+    "false_negatives": 7.0
+  },
+  "cv_roc_auc": {
+    "Logistic Regression": 0.8749023554985614,
+    "Random Forest (tuned)": 0.8765138284379477,
+    "XGBoost (tuned)": 0.878433406400886
+  },
+  "n_train": 734,
+  "n_test": 184,
+  "sklearn": "1.6.1"
+}

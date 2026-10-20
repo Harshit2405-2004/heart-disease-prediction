@@ -1,0 +1,15 @@
+# cpu-only torch wheels (smaller, streamlit community cloud has no gpu)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+streamlit>=1.46
+# same versions as the training notebooks, a different scikit-learn can fail to load tabular_model.joblib
+scikit-learn==1.6.1
+torch==2.11.0
+torchvision==0.26.0
+# pin to the colab version: import xgboost; print(xgboost.__version__)
+xgboost
+joblib
+pandas
+numpy
+matplotlib
+pillow
