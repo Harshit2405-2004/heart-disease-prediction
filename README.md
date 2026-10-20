@@ -5,7 +5,7 @@ Two models and a Streamlit app:
 - A **chest X-ray model**: DenseNet-121 fine-tuned in PyTorch to detect **cardiomegaly** (enlarged heart) on NIH ChestX-ray14, with a patient-wise split and Grad-CAM.
 
 
-![App](assets/app_screenshot.png)
+![App](assets/app_screenshot.jpeg)
 
 > Student project for learning. It is not a medical device and must not be used for decisions about anyone's health.
 
